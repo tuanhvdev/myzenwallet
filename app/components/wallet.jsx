@@ -1228,7 +1228,7 @@ export default class ZWallet extends React.Component {
     try {
       var publicAddresses = {}
 
-      function _privKeyToAddr(pk, compressPubKey, useTestNet) {
+      var _privKeyToAddr = function (pk, compressPubKey, useTestNet) {
         // If not 64 length, probs WIF format
         if (pk.length !== 64) {
           pk = zencashjs.address.WIFToPrivKey(pk)
@@ -1346,8 +1346,8 @@ export default class ZWallet extends React.Component {
     _settings.useTestNet = !_settings.useTestNet
 
     if (_settings.useTestNet) {
-      _settings.insightAPI = 'https://aayanl.tech/insight-api-zen/'
-      _settings.explorerURL = 'https://aayanl.tech/'
+      _settings.insightAPI = 'https://explorer-testnet.horizen.global/insight-api-zen/'
+      _settings.explorerURL = 'https://explorer-testnet.horizen.global/'
     }
     else {
       _settings.insightAPI = 'https://explorer.horizen.global/insight-api-zen/'
