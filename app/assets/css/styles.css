@@ -19,7 +19,7 @@ a, button {
 }
 
 .navbar {
-    background-color: #041742;
+    background-color: rgba(4, 23, 66, 0.75);
 }
 
 .navbar .nav-link {
@@ -105,7 +105,7 @@ a, button {
 }
 
 .site-content-wrapper {
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 8px #000;
     background: #ffffff;
     padding: 3rem 1.5rem;
     margin: 2rem 0;
